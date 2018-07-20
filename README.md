@@ -18,7 +18,15 @@ git hub tutorial
    `cp ~/.ssh/id_rsa.pub ~/Desktop/`
    
 ## Adding SSH key to your GitHub account
-1. `ssh git@github.com`
+    
+    We may see a warning like this:
+
+   `The authenticity of host 'github.com (192.30.255.113)' can't be established.
+    RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+    Are you sure you want to continue connecting (yes/no)? `
+    
+    Verify that the fingerprint in the message and type yes to continue
+
 ## Create an Amazon EC2 instance
 1. Register a AWS acount.
 2. Create Key Pairs on EC2 dashboard.
@@ -28,6 +36,15 @@ git hub tutorial
 1. Running on my AWS Operating System.
    
    `ssh ubuntu@<IPv4 Public IP>`
+   
+    We may see a warning like this:
+    
+    `The authenticity of host '18.217.134.208 (18.217.134.208)' can't be established.
+     ECDSA key fingerprint is SHA256:psiF3Q21VkGAPHJYMF53Z0YTel7OTa6Y9U1MxZw7Wso.
+     Are you sure you want to continue connecting (yes/no)?`
+     
+     Verify that the fingerprint in the message and type yes to continue
+   
   
 2. Docker Installation.
    
@@ -41,10 +58,14 @@ git hub tutorial
 
    `tmux` `docker pull jupyter/datascience-notebook
    
+    If we see the `Status: Downloaded newer image for jupyter/datascience-notebook:latest` at the end, we got the correct         Docker image. 
 5. Running the correct Docker image as a container.
    
-   `docker run -p 443:8888 -v /home/ubuntu:/home/jovyan jupyter/datascienc-notebook` *we will get a token here*
+   `docker run -p 443:8888 -v /home/ubuntu:/home/jovyan jupyter/datascienc-notebook` 
+   
+   *we will get a token here*
+   **`token=b524ae0c6f5e2f5c77104738179185b74bd09f75f394f4f5`**
 6. Now we can visit our own own jupyter data science notebook page with the token.
    
-   URL: <IPv4 Public IP>:443  and enter your token
+   go to the page `<IPv4 Public IP>:443` and enter the token
    
