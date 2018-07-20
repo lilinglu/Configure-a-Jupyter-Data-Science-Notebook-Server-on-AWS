@@ -1,6 +1,6 @@
 # Configure-a-Jupyter-Data-Science-Notebook-Server-on-AWS
 git hub tutorial
-## Generating SSH keys 
+## Step 1: Generating SSH keys 
 1. Open Terminal.
 2. Enter `ls ~/.ssh`  to see if you already have SSH keys.
 3. If no such file or directory, we should generate a new SSH key.
@@ -17,7 +17,7 @@ git hub tutorial
    
    `cp ~/.ssh/id_rsa.pub ~/Desktop/`
    
-## Adding SSH key to your GitHub account
+## Step 2: Adding SSH key to your GitHub account
     
     We may see a warning like this:
 
@@ -27,12 +27,12 @@ git hub tutorial
     
     Verify that the fingerprint in the message and type yes to continue
 
-## Create an Amazon EC2 instance
+## Step 3: Create an Amazon EC2 instance
 1. Register a AWS acount.
 2. Create Key Pairs on EC2 dashboard.
 3. Create Security Groups on EC2 dashboard.
 4. Launch a t2.micro instance.
-## Configure my own jupyter data science notebook server on AWS.
+## Step 4: Configure my own jupyter data science notebook server on AWS.
 1. Running on my AWS Operating System.
    
    `ssh ubuntu@<IPv4 Public IP>`
@@ -68,4 +68,11 @@ git hub tutorial
 6. Now we can visit our own own jupyter data science notebook page with the token.
    
    go to the page `<IPv4 Public IP>:443` and enter the token
+   
+## A diagram of the overall system.
+   
+![ci_with_docker](https://user-images.githubusercontent.com/40584525/43027655-83261e00-8c30-11e8-89d7-e33408cbeff2.png)
+
+## A detailed budget of the costs of running a Jupyter Data Science Notebook Server for three months using at least three        different kinds of EC 2 instances.
+ 
    
