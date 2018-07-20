@@ -74,5 +74,10 @@ git hub tutorial
 ![ci_with_docker](https://user-images.githubusercontent.com/40584525/43027655-83261e00-8c30-11e8-89d7-e33408cbeff2.png)
 
 ## A detailed budget of the costs of running a Jupyter Data Science Notebook Server for three months using at least three        different kinds of EC 2 instances.
- 
+   * This budget was calculated on [Amazon calculator](https://calculator.s3.amazonaws.com/index.html).
+   * Here I use three types of EC2 instances: Linux on t2.micro, Linux on t2.small, Linux on t2.nano.
+   * According to the calculator, the totally monthly cost is $21.09. So we need $21.09 * 3 = $63.27 for three months.
+   
    ![1532125885623](https://user-images.githubusercontent.com/40584525/43028003-1bfca738-8c32-11e8-9ff8-feeb32683905.png)
+   
+   ![1532126050008](https://user-images.githubusercontent.com/40584525/43028058-720f8d7a-8c32-11e8-9644-0cd4142025de.jpg)
