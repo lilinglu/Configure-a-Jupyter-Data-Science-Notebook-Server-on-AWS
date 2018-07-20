@@ -75,4 +75,4 @@ git hub tutorial
 
 ## A detailed budget of the costs of running a Jupyter Data Science Notebook Server for three months using at least three        different kinds of EC 2 instances.
  
-   
+   ![1532125885623](https://user-images.githubusercontent.com/40584525/43028003-1bfca738-8c32-11e8-9ff8-feeb32683905.png)
