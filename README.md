@@ -9,7 +9,10 @@ git hub tutorial
    
    `ssh-keygen`
    
-4. Copy SSH keys to the Desktop.
+4. Enter `ls ~/.ssh` again, now you will see `id_rsa		id_rsa.pub`
+ 
+## Step 2: Adding SSH key to GitHub account
+1. Copy SSH keys to the Desktop.
    
    `cat ~/.ssh/id_rsa.pub`  
    
@@ -17,8 +20,13 @@ git hub tutorial
    
    `cp ~/.ssh/id_rsa.pub ~/Desktop/`
    
-## Step 2: Adding SSH key to your GitHub account
-    
+2. In the upper-right corner of any page, click your profile photo, then click Settings.
+3. In the user settings sidebar, click SSH and GPG keys.
+4. Click New SSH key or Add SSH key. Paste your key into the "Key" field.
+5. Click Add SSH key.
+6. Testing SSH connection
+
+    Run `ssh git@github.com'
     We may see a warning like this:
 
    `The authenticity of host 'github.com (192.30.255.113)' can't be established.
@@ -33,7 +41,7 @@ git hub tutorial
 3. Create Security Groups on EC2 dashboard.
 4. Launch a t2.micro instance.
 ## Step 4: Configure my own jupyter data science notebook server on AWS.
-1. Running on my AWS Operating System.
+1. Testing AWS Operating System connection.
    
    `ssh ubuntu@<IPv4 Public IP>`
    
