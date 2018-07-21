@@ -9,7 +9,9 @@ git hub tutorial
    
    `ssh-keygen`
    
-4. Enter `ls ~/.ssh` again, now you will see `id_rsa		id_rsa.pub`
+4. Enter `ls ~/.ssh` again, now you will see 
+
+   `id_rsa		id_rsa.pub`
  
 ## Step 2: Adding SSH key to GitHub account
 1. Copy SSH keys to the Desktop.
@@ -26,7 +28,8 @@ git hub tutorial
 5. Click Add SSH key.
 6. Testing SSH connection
 
-    Run `ssh git@github.com'
+    `ssh git@github.com'
+    
     We may see a warning like this:
 
    `The authenticity of host 'github.com (192.30.255.113)' can't be established.
@@ -60,19 +63,29 @@ git hub tutorial
  
 3. Adding my user to the "docker" group.
   
-   `tmux` `sudo usermod -aG docker ubuntu`   *you will have to log out and back in for this to take effect!*
+   `tmux` 
+   
+   `sudo usermod -aG docker ubuntu`   
+   
+   you will have to log out and back in for this to take effect!
 
 4. Obtaining the correct Docker image.
 
    `tmux` `docker pull jupyter/datascience-notebook`
    
-    If we see the `Status: Downloaded newer image for jupyter/datascience-notebook:latest` at the end, we got the correct         Docker image. 
+    If we see the 
+    
+    `Status: Downloaded newer image for jupyter/datascience-notebook:latest` 
+    
+     we got the correct Docker image. 
 5. Running the correct Docker image as a container.
    
    `docker run -p 443:8888 -v /home/ubuntu:/home/jovyan jupyter/datascienc-notebook` 
    
-   *we will get a token here*
+   we will get a token here
+   
    **`token=b524ae0c6f5e2f5c77104738179185b74bd09f75f394f4f5`**
+   
 6. Now we can visit our own own jupyter data science notebook page with the token.
    
    go to the page `<IPv4 Public IP>:443` and enter the token
@@ -84,7 +97,7 @@ git hub tutorial
 ## A detailed budget of the costs of running a Jupyter Data Science Notebook Server for three months using at least three        different kinds of EC 2 instances.
    * This budget was calculated on [Amazon calculator](https://calculator.s3.amazonaws.com/index.html).
    * Here I use three types of EC2 instances: Linux on t2.micro, Linux on t2.small, Linux on t2.nano.
-   * According to the calculator, the totally monthly cost is $21.09. So we need $21.09 * 3 = $63.27 for three months.
+   * According to the calculator, the totally monthly cost is $21.09 with discount. So I need $21.09 * 3 = $63.27 for three months.
    
    ![1532125885623](https://user-images.githubusercontent.com/40584525/43028003-1bfca738-8c32-11e8-9ff8-feeb32683905.png)
    
