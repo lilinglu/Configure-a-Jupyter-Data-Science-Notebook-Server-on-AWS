@@ -64,7 +64,7 @@ git hub tutorial
 
 4. Obtaining the correct Docker image.
 
-   `tmux` `docker pull jupyter/datascience-notebook
+   `tmux` `docker pull jupyter/datascience-notebook`
    
     If we see the `Status: Downloaded newer image for jupyter/datascience-notebook:latest` at the end, we got the correct         Docker image. 
 5. Running the correct Docker image as a container.
