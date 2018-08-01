@@ -3,7 +3,7 @@ services:
     this_jupyter:
         build: docker/jupyter
         ports:
-            - 8000:8888
+            - 80:8888
         volumes:
             - .:/home/jovyan
         command: start-notebook.sh --NotebookApp.token=""
